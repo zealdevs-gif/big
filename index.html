@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Big </title>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '38949716664672408');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=38949716664672408&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial,sans-serif;
+}
+
+html,body{
+  width:100%;
+  overflow-x:hidden;
+}
+
+body{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:linear-gradient(135deg,#0b1020,#111827,#1e1b4b);
+  position:relative;
+  padding:20px;
+  overflow-x:hidden;
+  overflow-y:auto;
+}
+
+body::before,
+body::after{
+  content:'';
+  position:absolute;
+  width:280px;
+  height:280px;
+  border-radius:50%;
+  filter:blur(100px);
+  animation:move 8s infinite alternate ease-in-out;
+  z-index:0;
+  pointer-events:none;
+}
+
+body::before{
+  background:#00c3ff;
+  top:-120px;
+  left:-120px;
+}
+
+body::after{
+  background:#7c3aed;
+  bottom:-120px;
+  right:-120px;
+}
+
+@keyframes move{
+  100%{
+    transform:translate(30px,20px);
+  }
+}
+
+.card{
+  width:100%;
+  max-width:460px;
+  background:rgba(18,24,38,0.92);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter:blur(20px);
+  border-radius:30px;
+  padding:95px 30px 30px;
+  text-align:center;
+  position:relative;
+  z-index:2;
+  box-shadow:0 20px 80px rgba(0,0,0,0.45);
+}
+
+.top-images{
+  position:absolute;
+  top:-55px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:3;
+}
+
+.top-images img{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid rgba(255,255,255,0.2);
+  box-shadow:0 10px 30px rgba(0,0,0,0.45);
+}
+
+.badge{
+  display:inline-block;
+  background:linear-gradient(90deg,#22c55e,#16a34a);
+  padding:8px 16px;
+  border-radius:30px;
+  font-size:13px;
+  font-weight:700;
+  margin-bottom:18px;
+  color:white;
+}
+
+h1{
+  font-size:30px;
+  line-height:1.2;
+  margin-bottom:14px;
+  color:#fff;
+}
+
+p{
+  color:#cbd5e1;
+  font-size:16px;
+  line-height:1.6;
+  margin-bottom:25px;
+}
+
+.features{
+  list-style:none;
+  margin-bottom:28px;
+}
+
+.features li{
+  background:rgba(255,255,255,0.05);
+  padding:14px;
+  margin:10px 0;
+  border-radius:14px;
+  color:#e2e8f0;
+  font-size:15px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  padding:18px;
+  border-radius:18px;
+  text-decoration:none;
+  color:white;
+  font-size:18px;
+  font-weight:bold;
+  background:linear-gradient(135deg,#0088cc,#00d4ff,#0ea5e9);
+  background-size:200% 200%;
+  animation:btnGlow 3s infinite;
+  box-shadow:0 15px 35px rgba(0,136,204,.45);
+  transition:.3s;
+}
+
+.btn:hover{
+  transform:translateY(-4px) scale(1.02);
+}
+
+@keyframes btnGlow{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@media (max-width:768px){
+
+  body{
+    padding:70px 12px 20px;
+  }
+
+  .card{
+    max-width:100%;
+    padding:80px 18px 22px;
+    border-radius:22px;
+  }
+
+  .top-images{
+    top:-45px;
+  }
+
+  .top-images img{
+    width:95px;
+    height:95px;
+  }
+
+  h1{
+    font-size:22px;
+  }
+
+  p{
+    font-size:14px;
+    line-height:1.5;
+  }
+
+  .features li{
+    font-size:13px;
+    padding:12px;
+  }
+
+  .btn{
+    font-size:15px;
+    padding:15px;
+    border-radius:14px;
+  }
+
+  .badge{
+    font-size:11px;
+    padding:7px 12px;
+  }
+
+  body::before,
+  body::after{
+    width:180px;
+    height:180px;
+    filter:blur(60px);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  
+  <div class="top-images">
+    <img src="big.jpg" alt="Rochit Singh">
+  </div>
+
+  <div class="badge">FREE TELEGRAM ACCESS</div>
+
+  <h1>TheBigBull (SEBI REGISTERED)</h1>
+
+  <p>
+    Join our Telegram community for market education,  insights & learning content.
+  </p>
+
+  <ul class="features">
+    <li>📊 Daily Market Learning Updates</li>
+    <li>🔥 Premium Educational Content</li>
+    <li>👥 Fast Growing Tr@ding Community</li>
+  </ul>
+
+  <a href="https://t.me/+XZ6I7E_ijMsyODc1"
+     class="btn"
+     target="_blank"
+     onclick="fbq('track', 'Subscribe');">
+     🚀 Join Telegram Channel
+  </a>
+
+</div>
+
+
+
+</body>
+</html>
